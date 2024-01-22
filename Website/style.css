@@ -318,10 +318,18 @@ form .btn2{
     padding: 14px 60px;
     text-align: center;
 }
-/*------------------------css for small screens-----------------------*/
+
 nav .fa-solid {
     display: none;
 }
+.testrow{
+    float: left;
+    width: 50%
+}
+
+
+/*------------------------css for small screens-----------------------*/
+
 
 @media only screen and (max-width: 600px){
     #header{
@@ -387,3 +395,4 @@ nav .fa-solid {
     margin-top: -40px;
     display: block;
 }
+
