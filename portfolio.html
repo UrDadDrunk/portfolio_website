@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Mazurek - portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6458f6621.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <a href = "index.html"><img src="images/napis.png" class="logo"></a>
+            <ul id = "sidemenu">
+                <li><a href = "index.html">← Back</a></li>
+                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"onclick = "openmenu()"></i>
+        </nav>
+    </div>
+<!----------------------portfolio-------------------->
+<div id="portfolio">
+    <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images\aurora.webp"></a>
+                    <div class="layer">
+                        <h3>Professional driving simulator</h3>
+                        <a href="https://4experience.co/portfolio-item/professional-driving-simulator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\haven.webp"></a>
+                    <div class="layer">
+                        <h3>Building 3D Configurator</h3>
+                        <a href="https://4experience.co/portfolio-item/prefabricated-building-3d-configurator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\omaha.webp"></a>
+                    <div class="layer">
+                        <h3>VR Soft Skills Training</h3>
+                        <a href="https://4experience.co/portfolio-item/missionone-vr-soft-skills-training/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\starheroes.png"></a>
+                    <div class="layer">
+                        <h3>3D Space Shooter</h3>
+                        <a href="https://starheroes.io/#hero"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\attackofthesnacks.png"></a>
+                    <div class="layer">
+                        <h3>Attack Of The Snacks</h3>
+                        <a href="https://4experience.co/portfolio-item/attack-of-the-snacks-vr-food-game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\drunkempire.jpg"></a>
+                    <div class="layer">
+                        <h3>Drunk Empire</h3>
+                        <a href="https://www.youtube.com/watch?v=ya5dYjr9S88"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\staragent.webp"></a>
+                    <div class="layer">
+                        <h3>Star Agent</h3>
+                        <a href="https://www.youtube.com/watch?v=nmk5rC-QCxA"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 id = "muchmore"> and much more I can't show because of NDA </h1>
+    </div>
+</div>
+<!---------------------------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class ="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>adrianmazurek1995@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+48 535 039 152</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/adrian.mazurek.50"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=Tar-P0zwOSO_xQFv"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=Tar-P0zwOSO_xQFv"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/adrianmazurek/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-------tutaj w a href cv potem wrzuce, ale bez telefonu dla bezpieczenstwa----->
+                <a href="#" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder = "Your Name" required>
+                    <input type = "email" name = "Email" placeholder = "Your Email" required>
+                    <textarea name = "Message" rows="6" placeholder = "Your Message "></textarea>
+                    <button type= "submit" class= "btn btn2">Submit</button>
+                </form>
+                <span id= "msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 by Me :)</p>
+    </div>
+</div>
+    
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYNynj56z27f3AERYVsLLSCMXYtx0duDZoyfx4YBuiy7v9mr3Tvje33CDNKX4LFpYGEQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
