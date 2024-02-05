@@ -1,8 +1,11 @@
 /**/
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -125,7 +128,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 19px;
 }
 .tab-contents{
     display: none;
